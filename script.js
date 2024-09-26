@@ -45,7 +45,10 @@ const perguntas = [
                 texto: "Brasil."
             },
             {
-                texto: "Paraguai"
+                texto: "Paraguai."
+            },
+            {
+                texto: "São iguais."
             }
         ]
     },
@@ -54,7 +57,7 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "A medicina no Paraguai enfrenta desafio de infraestrutura e acesso, especialmente no sistema público e em áreas rurais. A formação médica ocorre localmente, mas muitos buscam especialização no exterior. O setor privado oferece serviços de maior qualidade em comparação ao público. Nestas perguntas você pode observar a sua opinião em relação ao estudo de medicina.";
+let historiaFinal = "enfrenta desafio de infraestrutura e acesso, especialmente no sistema público e em áreas rurais. A formação médica ocorre localmente, mas muitos buscam especialização no exterior. O setor privado oferece serviços de maior qualidade em comparação ao público. Nestas perguntas você pode observar a sua opinião em relação ao estudo de medicina.";
 
 function mostraPergunta() {
     if (atual >= perguntas.length) {
@@ -84,7 +87,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "";
+    caixaPerguntas.textContent = "A medicina  no Paraguai...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
